@@ -1,0 +1,44 @@
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>Set BOSSDBServer= 172.17.173.207		 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>Set BOSSDataBase= BOSS_16.0_Modern 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>Set BOSSUser=manager 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>Set BOSSPassword=abc@123 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>Set SRC=. 
+Executing Tables
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>FOR %f IN (".\SIteAndCentral_sps\*.SQL") DO (echo "%f"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i "%f"  ) 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\058_spAdminRptEmployeeReport.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\058_spAdminRptEmployeeReport.sql"  ) 
+".\SIteAndCentral_sps\058_spAdminRptEmployeeReport.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\058_spAdminRptEmployeeReport.sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\434_spAdminSyncStatusFromSite .sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\434_spAdminSyncStatusFromSite .sql"  ) 
+".\SIteAndCentral_sps\434_spAdminSyncStatusFromSite .sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\434_spAdminSyncStatusFromSite .sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\437_spAdminGetSiteDetails.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\437_spAdminGetSiteDetails.sql"  ) 
+".\SIteAndCentral_sps\437_spAdminGetSiteDetails.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\437_spAdminGetSiteDetails.sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\457_spAdminApprovalorRejectalMessageDetail.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\457_spAdminApprovalorRejectalMessageDetail.sql"  ) 
+".\SIteAndCentral_sps\457_spAdminApprovalorRejectalMessageDetail.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\457_spAdminApprovalorRejectalMessageDetail.sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\460_spAdminBulkSaveBeverageCategory.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\460_spAdminBulkSaveBeverageCategory.sql"  ) 
+".\SIteAndCentral_sps\460_spAdminBulkSaveBeverageCategory.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\460_spAdminBulkSaveBeverageCategory.sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\575_spAdminGetProcessedMessageDetailsforSyncMgmtById.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\575_spAdminGetProcessedMessageDetailsforSyncMgmtById.sql"  ) 
+".\SIteAndCentral_sps\575_spAdminGetProcessedMessageDetailsforSyncMgmtById.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\575_spAdminGetProcessedMessageDetailsforSyncMgmtById.sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>(echo ".\SIteAndCentral_sps\576_spConfigAppGetRoleWithSecurityByRoleId.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\576_spConfigAppGetRoleWithSecurityByRoleId.sql"  ) 
+".\SIteAndCentral_sps\576_spConfigAppGetRoleWithSecurityByRoleId.sql"     sqlcmd -d  BOSS_16.0_Modern -S  172.17.173.207		 -E -i ".\SIteAndCentral_sps\576_spConfigAppGetRoleWithSecurityByRoleId.sql" 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>if not ERRORLEVEL 1 goto Procedures 
+Error
+Failed Building Tables in Database 
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>goto ERRORSEXIT 
+Error: Database Excecuted With Error. To Find out Exact Error see file ErrorLog.log
+
+C:\Users\mponnusamy\Downloads\1.Database\StoredProcedure>PAUSE
+Press any key to continue . . . 
